@@ -69,6 +69,7 @@ body{
     position:absolute;
 }
 
+
 #about{ 
     background-color: black;
     position: absolute;
@@ -123,9 +124,7 @@ body{
     font-weight: bold;
 }
 @media (400px <= width <= 600px) { 
-    #pic { 
-        right: -3px;
-    }
+    
     #article  { 
         right: 0px;
     }
@@ -177,8 +176,20 @@ footer{
     right:-377px;
     filter: blur(8px)
 }
-
-section:hover #background-1 { 
+@media (400px <= width <= 600px){ 
+    #background-1 {
+        right: 0px;
+    }
+}
+section #pic:hover > section #background-1{ 
     transition: 0.3s ease-in-out;
     filter:blur(12px)
+}
+@media ( 400px <= width <= 600px ){ 
+    body { 
+        width: 50px;
+    }
+    #pic { 
+        right : -60px
+    }
 }
